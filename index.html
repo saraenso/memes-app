@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Memes app</title>
+</head>
+<body>
+    <section class="memes-app">
+        <div class="container">
+            <h1 class="memes-app__title">Make your own meme</h1>
+            <ul class="memes-app__columns">
+                <li class="memes-app__column">
+                    <h2 class="memes-app__column__title">Settings</h2>
+                    <ul class="memes-app__column__items">
+                        <li class="memes-app__column__item">
+                            <h3 class="memes-app__column__item__title">Meme</h3>
+                            <select class="memes-app__column__item__select parameters" name="select" id="select"></select>
+                        </li>
+                        <li class="memes-app__column__item">
+                            <h3 class="memes-app__column__item__title">Text above</h3>
+                            <input class="memes-app__column__item__text-above parameters" type="text" id="input-above">
+                            <p class="error" id="error-above"></p>
+                        </li>
+                        <li class="memes-app__column__item">
+                            <h3 class="memes-app__column__item__title">Text below</h3>
+                            <input class="memes-app__column__item__text-below parameters" type="text" id="input-below">
+                            <p class="error" id="error-below"></p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="memes-app__column">
+                    <h2 class="memes-app__column__title">Preview</h2>
+                    <div class="memes-app__column__inner">
+                        <img class="memes-app__column__img" id="meme-image" src="" alt="">
+                        <p class="memes-app__column__caption-above parameters" id="text-above"></p>
+                        <p class="memes-app__column__caption-below parameters" id="text-below"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

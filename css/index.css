@@ -1,0 +1,100 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F5F5F5;
+}
+
+.memes-app {
+    padding-bottom: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 930px;
+    padding: 0 30px;
+}
+
+.memes-app__title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.memes-app__columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.memes-app__column__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.memes-app__column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.memes-app__column__items {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.memes-app__column__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 393px;
+}
+
+.memes-app__column__item__title {
+    font-size: 25px;
+}
+
+.parameters {
+    font-family: inherit;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 30.5px;
+}
+
+.memes-app__column__inner {
+    position: relative;
+}
+
+.memes-app__column__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.memes-app__column__caption-above, .memes-app__column__caption-below {
+    position: absolute;
+    width: 95%;
+    text-align: center;
+    word-break: break-all;
+}
+
+.memes-app__column__caption-above {
+    top: 20px;
+}
+
+.memes-app__column__caption-below {
+    bottom: 20px;
+}
+
+.error {
+    font-size: 17px;
+    color: red;
+}
+
+.error:empty {
+    display: none;
+}
