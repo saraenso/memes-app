@@ -63,6 +63,6 @@ class View {
     }
 
     showError(errorNode, message) {
-        errorNode.innerText = message;
+        errorNode.innerText = message || ''; 
     }
 }

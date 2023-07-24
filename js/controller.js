@@ -24,7 +24,8 @@ class Controller {
 
     handleModelMemesChanged = (memes, isError) => {
         this.view.renderMemes(memes);
-        this.view.showError(isError);
+        this.view.showError(this.view.errorAboveNode, isError);
+        this.view.showError(this.view.errorBelowNode, isError);
     }
 
     handleViewGenerateMeme = (selectedMeme, aboveText, belowText) => {
@@ -34,5 +35,6 @@ class Controller {
             below: belowText
         };
         this.model.addMeme(meme);
+        this.model.setError(false);
     }
 }
